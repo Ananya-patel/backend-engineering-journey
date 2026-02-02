@@ -1,0 +1,10 @@
+## Day 38 – CompletableFuture
+
+### Key Learnings
+- CompletableFuture enables non-blocking async programming
+- Async tasks can be chained using thenApply / thenAccept
+- Multiple futures can be combined
+- Errors handled using exceptionally
+
+### Hands-on
+- Built async pipelines using CompletableFuture
