@@ -1,0 +1,10 @@
+## Day 39 – Java Memory Model & Happens-Before
+
+### Key Learnings
+- Java Memory Model defines visibility and ordering guarantees
+- Happens-before ensures writes by one thread are visible to others
+- synchronized, volatile, start(), join() establish happens-before
+- Correct concurrent code relies on memory guarantees, not assumptions
+
+### Hands-on
+- Reasoned about visibility and ordering using happens-before rules
