@@ -1,0 +1,10 @@
+## Day 34 – Volatile & Memory Visibility
+
+### Key Learnings
+- Threads may see stale data without proper visibility guarantees
+- volatile ensures visibility across threads
+- volatile does not guarantee atomicity
+- synchronized provides both visibility and atomicity
+
+### Hands-on
+- Demonstrated visibility issue and fixed it using volatile
