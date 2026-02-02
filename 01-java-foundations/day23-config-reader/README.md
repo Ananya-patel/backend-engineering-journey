@@ -11,3 +11,14 @@ Built a file-based configuration reader using Java NIO and Streams.
 
 ### Hands-on
 - Parsed key-value config file into Map
+
+## Day 24 – Java Streams (filter, forEach, reduce)
+
+### Key Learnings
+- forEach processes each element
+- filter selects elements based on condition
+- reduce combines elements into a single result
+
+### Hands-on
+- Filtered configuration entries using streams
+
