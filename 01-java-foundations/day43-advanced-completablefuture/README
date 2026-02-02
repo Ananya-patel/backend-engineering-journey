@@ -1,0 +1,10 @@
+## Day 43 – Advanced CompletableFuture Patterns
+
+### Key Learnings
+- thenCompose flattens async pipelines
+- Timeouts prevent hanging operations
+- CompletableFuture supports resilient fallback logic
+- Multiple async tasks can run in parallel
+
+### Hands-on
+- Built a non-blocking async orchestration flow
