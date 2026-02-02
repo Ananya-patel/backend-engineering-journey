@@ -1,0 +1,10 @@
+## Day 42 – Thread Pool Internals & Tuning
+
+### Key Learnings
+- ThreadPoolExecutor provides full control
+- corePoolSize, maxPoolSize, and queue define behavior
+- Unbounded queues can cause OOM
+- Rejection strategies protect system stability
+
+### Hands-on
+- Tuned a thread pool with bounded queue and rejection policy
