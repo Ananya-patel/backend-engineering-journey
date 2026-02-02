@@ -1,0 +1,10 @@
+## Day 32 – Synchronization & Race Conditions
+
+### Key Learnings
+- Race conditions occur when threads share mutable data
+- count++ is not atomic
+- synchronized ensures exclusive access
+- Proper synchronization prevents data corruption
+
+### Hands-on
+- Demonstrated race condition and fixed it using synchronization
