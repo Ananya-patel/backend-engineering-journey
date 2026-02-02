@@ -1,0 +1,10 @@
+## Day 26 – Lambdas Basics
+
+### Key Learnings
+- Lambdas are anonymous functions
+- Used with functional interfaces
+- Replace boilerplate anonymous classes
+- Improve readability in streams and collections
+
+### Hands-on
+- Used lambdas with forEach and filter
