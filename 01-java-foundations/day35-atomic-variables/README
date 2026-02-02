@@ -1,0 +1,10 @@
+## Day 35 – Atomic Variables & Lock-Free Concurrency
+
+### Key Learnings
+- synchronized can be expensive
+- Atomic variables provide lock-free thread safety
+- Atomic operations are uninterruptible
+- Atomic logic still requires careful design
+
+### Hands-on
+- Implemented thread-safe counter using AtomicInteger
