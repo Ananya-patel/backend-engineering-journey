@@ -1,0 +1,10 @@
+## Day 36 – ExecutorService & Thread Pools
+
+### Key Learnings
+- Raw thread creation is dangerous
+- Thread pools control concurrency
+- ExecutorService manages thread execution
+- Fixed thread pools are preferred in backend systems
+
+### Hands-on
+- Executed multiple tasks using ExecutorService
