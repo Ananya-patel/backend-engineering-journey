@@ -1,0 +1,10 @@
+## Day 41 – JVM Internals & Garbage Collection
+
+### Key Learnings
+- JVM executes bytecode using interpretation and JIT
+- Heap stores objects and is managed by GC
+- GC works generationally (young vs old)
+- Memory leaks occur due to retained references
+
+### Hands-on
+- Observed heap exhaustion using a memory pressure demo
