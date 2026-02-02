@@ -1,0 +1,11 @@
+## Day 37 – Callable & Future
+
+### Key Learnings
+- Callable returns a result and can throw exceptions
+- Future represents pending async computation
+- future.get() blocks until result is ready
+- Async exceptions are wrapped in ExecutionException
+
+### Hands-on
+- Executed multiple Callables using ExecutorService
+- Retrieved results using Future
