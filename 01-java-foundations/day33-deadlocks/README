@@ -1,0 +1,11 @@
+## Day 33 – Deadlocks & Prevention
+
+### Key Learnings
+- Deadlock occurs when threads wait on each other indefinitely
+- Four necessary conditions cause deadlock
+- Consistent lock ordering prevents deadlocks
+- Deadlocks are dangerous in production systems
+
+### Hands-on
+- Created a deadlock scenario
+- Fixed it using proper lock ordering
