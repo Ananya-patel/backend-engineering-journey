@@ -1,0 +1,10 @@
+## Day 44 – Clean Java & Defensive Coding
+
+### Key Learnings
+- Clean code prioritizes readability and safety
+- Defensive checks prevent misuse
+- Clear exceptions improve debugging
+- APIs should be hard to misuse
+
+### Hands-on
+- Designed a clean, defensive Java service
