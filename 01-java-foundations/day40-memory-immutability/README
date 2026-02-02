@@ -1,0 +1,10 @@
+## Day 40 – Java Memory, Immutability & final
+
+### Key Learnings
+- Stack stores local variables and references
+- Heap stores objects shared across threads
+- Immutability simplifies concurrency
+- final does not automatically mean immutable
+
+### Hands-on
+- Designed an immutable backend-safe Java class
