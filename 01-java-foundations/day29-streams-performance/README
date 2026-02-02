@@ -1,0 +1,10 @@
+## Day 29 – Streams Internals & Performance Intuition
+
+### Key Learnings
+- Streams are pipelines, not data structures
+- Execution is lazy and starts with terminal operations
+- Streams prioritize readability over raw speed
+- Parallel streams should be used cautiously
+
+### Hands-on
+- Observed lazy evaluation using filter and map
