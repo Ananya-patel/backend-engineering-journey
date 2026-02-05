@@ -2,12 +2,15 @@
 
 package com.example.springbootapi.controller;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.springbootapi.dto.UserRequestDTO;
+import com.example.springbootapi.dto.UserResponseDTO;
 import com.example.springbootapi.service.UserService;
 
 import jakarta.validation.Valid;
@@ -22,12 +25,19 @@ public class UserController {
     public UserController(UserService userService) {
         this.userService = userService;
     }
-
     @PostMapping
-public String createUser(@Valid @RequestBody UserRequestDTO dto) {
-    userService.createUser(dto);
-    return "User created successfully";
+public ResponseEntity<UserResponseDTO> createUser(
+        @Valid @RequestBody UserRequestDTO dto) {
+
+    UserResponseDTO response = userService.createUser(dto);
+
+    return ResponseEntity
+            .status(HttpStatus.CREATED)
+            .body(response);
 }
+
+
+    
 
 
 
