@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.springbootapi.model.User;
+import com.example.springbootapi.dto.UserRequestDTO;
 import com.example.springbootapi.service.UserService;
 
 import jakarta.validation.Valid;
@@ -24,10 +24,11 @@ public class UserController {
     }
 
     @PostMapping
-public String createUser(@Valid @RequestBody User user) {
-    userService.createUser(user);
+public String createUser(@Valid @RequestBody UserRequestDTO dto) {
+    userService.createUser(dto);
     return "User created successfully";
 }
+
 
 
 }
