@@ -8,17 +8,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.springbootapi.model.User;
+import com.example.springbootapi.service.UserService;
 
 @RestController
 @RequestMapping("/users")
 public class UserController {
 
+    private final UserService userService;
+
+    // Constructor Injection 
+    public UserController(UserService userService) {
+        this.userService = userService;
+    }
+
     @PostMapping
     public String createUser(@RequestBody User user) {
-
-        System.out.println("Name: " + user.getName());
-        System.out.println("Email: " + user.getEmail());
-
+        userService.createUser(user);
         return "User created successfully";
     }
 }
+
