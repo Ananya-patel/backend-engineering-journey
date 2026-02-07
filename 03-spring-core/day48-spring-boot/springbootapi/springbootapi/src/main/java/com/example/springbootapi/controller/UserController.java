@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.springbootapi.dto.UserRequestDTO;
@@ -77,6 +78,16 @@ public ResponseEntity<Void> deleteUser(@PathVariable Long id) {
 public ResponseEntity<List<UserResponseDTO>> getUsers() {
     return ResponseEntity.ok(userService.getAllUsers());
 }
+@GetMapping("/paged")
+public ResponseEntity<?> getUsersPaged(
+        @RequestParam(defaultValue = "0") int page,
+        @RequestParam(defaultValue = "5") int size
+) {
+    return ResponseEntity.ok(
+            userService.getUsersByPage(page, size)
+    );
+}
+
 
 
 
