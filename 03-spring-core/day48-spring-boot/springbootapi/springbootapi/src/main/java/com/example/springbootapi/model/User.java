@@ -1,4 +1,5 @@
 package com.example.springbootapi.model;
+import java.util.List;
 
 import jakarta.persistence.*;
 
@@ -43,5 +44,8 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+     private List<Order> orders;
+
 }
 

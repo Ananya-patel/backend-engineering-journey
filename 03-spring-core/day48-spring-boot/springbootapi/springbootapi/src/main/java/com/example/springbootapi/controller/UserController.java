@@ -42,6 +42,19 @@ public ResponseEntity<UserResponseDTO> createUser(
             .status(HttpStatus.CREATED)
             .body(response);
 }
+@PostMapping("/{id}/orders")
+public ResponseEntity<String> createOrder(@PathVariable Long id) {
+
+    userService.createOrderForUser(id);
+    return ResponseEntity.ok("Order created");
+}
+@PostMapping("/transaction-test")
+public ResponseEntity<String> testTransaction() {
+    userService.createUserAndOrderTogether();
+    return ResponseEntity.ok("Transaction completed");
+}
+
+
 @PutMapping("/{id}")
 public ResponseEntity<UserResponseDTO> updateUser(
         @PathVariable Long id,
