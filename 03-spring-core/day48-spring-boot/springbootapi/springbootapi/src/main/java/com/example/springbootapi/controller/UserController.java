@@ -21,6 +21,7 @@ import com.example.springbootapi.dto.UserResponseDTO;
 import com.example.springbootapi.dto.UserUpdateRequestDTO;
 import com.example.springbootapi.service.UserService;
 
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 
 @RestController
@@ -87,6 +88,11 @@ public ResponseEntity<?> getUsersPaged(
             userService.getUsersByPage(page, size)
     );
 }
+@GetMapping("/me")
+public String currentUser(HttpServletRequest request) {
+    return "Logged in as: " + request.getAttribute("userEmail");
+}
+
 
 
 
